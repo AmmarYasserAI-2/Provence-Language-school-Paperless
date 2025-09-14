@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Provence Language School — Paperless Resources</title>
+  <style>
+    :root{
+      --blue-800: #0b4f7a;
+      --blue-600: #1e73be;
+      --blue-400: #58a6e6;
+      --blue-100: #eaf6ff;
+      --accent: #f6c85f;
+      --card-radius: 12px;
+      --max-w: 980px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: linear-gradient(180deg, var(--blue-100) 0%, white 100%);
+      color:#07344a;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+    }
+    .container{
+      width:100%;
+      max-width:var(--max-w);
+      background: white;
+      border-radius:16px;
+      box-shadow: 0 8px 30px rgba(5,32,56,0.12);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:0;
+    }
+    header.brand{
+      padding:28px 22px;
+      background: linear-gradient(180deg,var(--blue-600), var(--blue-800));
+      color:white;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:flex-start;
+    }
+    .logo{
+      width:220px;
+      height:auto;
+      border-radius:10px;
+      background: rgba(255,255,255,0.06);
+      padding:8px;
+      box-shadow: inset 0 -6px 18px rgba(0,0,0,0.08);
+      margin-bottom:18px;
+      transition: transform 0.3s ease;
+    }
+    .logo:hover{
+      transform: scale(1.05);
+    }
+    .brand h1{margin:0;font-size:20px;letter-spacing:2px}
+    .brand p{margin:8px 0 0;font-size:13px;opacity:0.9}
+
+    main.content{
+      padding:28px 32px;
+    }
+    .intro{display:flex;align-items:center;gap:16px;margin-bottom:16px;}
+    .intro h2{margin:0;font-size:20px;color:var(--blue-800)}
+    .intro p{margin:0;color:#275b76}
+
+    .links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:18px}
+    .card{
+      background: linear-gradient(180deg, white, var(--blue-100));
+      border:1px solid rgba(11,79,122,0.06);
+      padding:14px 16px;
+      border-radius:var(--card-radius);
+      box-shadow: 0 6px 18px rgba(13,64,103,0.04);
+      display:flex;flex-direction:column;gap:8px;justify-content:space-between;
+      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .card:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(13,64,103,0.15);
+    }
+    .card h3{margin:0;font-size:15px;color:var(--blue-800)}
+    .card p{margin:0;font-size:13px;color:#2a5d78}
+    .actions{display:flex;gap:8px;margin-top:8px}
+    .btn{
+      display:inline-block;
+      padding:10px 12px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      font-size:13px;
+      border: none;
+      cursor:pointer;
+      transition: all 0.25s ease;
+    }
+    .btn-primary{
+      background:var(--blue-600);
+      color:white;
+      box-shadow: 0 6px 18px rgba(30,115,190,0.18);
+    }
+    .btn-primary:hover{
+      background:var(--blue-800);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(30,115,190,0.28);
+    }
+    .btn-outline{
+      background:transparent;
+      color:var(--blue-600);
+      border:1.5px solid var(--blue-400);
+    }
+    .btn-outline:hover{
+      background:var(--blue-100);
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(88,166,230,0.25);
+    }
+    .small{font-size:12px;padding:8px 10px;border-radius:8px}
+
+    .badge{
+      position:absolute;
+      top:10px;
+      right:10px;
+      background:var(--accent);
+      color:#07344a;
+      font-size:11px;
+      font-weight:700;
+      padding:3px 7px;
+      border-radius:8px;
+      box-shadow:0 2px 6px rgba(0,0,0,0.15);
+    }
+
+    footer{margin-top:22px;color:#376a86;font-size:13px}
+
+    /* responsive */
+    @media (max-width:880px){
+      .container{grid-template-columns:1fr}
+      .logo{width:200px}
+      header.brand{padding:20px}
+      main.content{padding:20px}
+    }
+    @media (max-width:480px){
+      .brand h1{font-size:18px}
+      .intro h2{font-size:18px}
+      .card h3{font-size:14px}
+      .card p{font-size:12px}
+      .btn{font-size:12px;padding:8px 10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="region" aria-label="Paperless resources">
+    <header class="brand">
+      <img class="logo" src="images.png" alt="Provence Language School logo"/>
+      <h1>Provence Language School</h1>
+        <p>ICT Department &copy; 2026 </p>
+      <p>Paperless Forms &amp; Trackers</p>
+    </header>
+
+    <main class="content">
+      <div class="intro">
+        <div>
+          <h2>Quick Access</h2>
+          <p>Tap the links below to open the Google Forms and Sheets used across the school.</p>
+        </div>
+      </div>
+
+      <section class="links" aria-label="forms and sheets">
+
+        <article class="card">
+          <div>
+            <h3>Printing Order (Form)</h3>
+            <p>Submit printing requests using this form.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://forms.gle/A4f6WHHkzaWhNPTy6" target="_blank" rel="noopener">Open Form</a>
+            <a class="btn btn-outline small" href="https://docs.google.com/spreadsheets/d/16DP_Mp0sjL49aOnv2YoS8p2XQ2ftPwxx05SoeOB_ZLY/edit?usp=sharing" target="_blank" rel="noopener">HOD Sheet</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div>
+            <h3>Permissions (Form)</h3>
+            <p>Collect parent permissions digitally.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://forms.gle/G5SY53AN54XeKtft9" target="_blank" rel="noopener">Open Form</a>
+            <a class="btn btn-outline small" href="https://docs.google.com/spreadsheets/d/1uqMBiVgCrvXPI0acNxKB1y7a-BvNp-ntw4UbgVX_CRg/edit?usp=sharing" target="_blank" rel="noopener">HOD Sheet</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="badge">All Teachers</span>
+          <div>
+            <h3>Behaviour Tracker</h3>
+            <p>Live Google Sheet for all teachers to track behaviour incidents and rewards.</p>
+          </div>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1i322gKrCa0buyJof89d5DnPvettKwZr96OuZdaYY5LM/edit?usp=sharing" target="_blank" rel="noopener">Open Sheet</a>
+          </div>
+        </article>
+
+      </section>
+
+      <footer>
+        Tip: Save this page as a bookmark on school devices for fast access.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

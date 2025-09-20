@@ -13,6 +13,16 @@
       --accent: #f6c85f;
       --card-radius: 12px;
       --max-w: 980px;
+
+      --pink-800: #a83279;
+      --pink-600: #d383a6;
+      --pink-400: #f3c1d9;
+      --pink-100: #fdeef4;
+
+      --green-800: #0a662e;
+      --green-600: #1e9e4a;
+      --green-400: #58d68d;
+      --green-100: #eafaf1;
     }
     *{box-sizing:border-box}
     body{
@@ -148,6 +158,40 @@
       .card p{font-size:12px}
       .btn{font-size:12px;padding:8px 10px}
     }
+
+    .card.lower-stage {
+      background: linear-gradient(180deg, white, var(--green-100));
+      border: 1px solid rgba(10, 102, 46, 0.06);
+      box-shadow: 0 6px 18px rgba(30, 158, 74, 0.04);
+    }
+
+    .card.lower-stage:hover {
+      box-shadow: 0 10px 22px rgba(30, 158, 74, 0.15);
+    }
+
+    .btn.lower-stage-primary {
+      background: var(--green-600);
+      color: white;
+      box-shadow: 0 6px 18px rgba(30, 158, 74, 0.18);
+    }
+
+    .btn.lower-stage-primary:hover {
+      background: var(--green-800);
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(30, 158, 74, 0.28);
+    }
+
+    .btn.lower-stage-outline {
+      background: transparent;
+      color: var(--green-600);
+      border: 1.5px solid var(--green-400);
+    }
+
+    .btn.lower-stage-outline:hover {
+      background: var(--green-100);
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(88, 214, 141, 0.25);
+    }
   </style>
 </head>
 <body>
@@ -167,7 +211,8 @@
         </div>
       </div>
 
-      <section class="links" aria-label="forms and sheets">
+      <h2> ⦿ Upper Stage:</h2>
+      <section class="links" aria-label=" Upper Stage forms and sheets">
 
         <article class="card">
           <div>
@@ -199,6 +244,44 @@
           </div>
           <div class="actions">
             <a class="btn btn-primary" href="https://docs.google.com/spreadsheets/d/1i322gKrCa0buyJof89d5DnPvettKwZr96OuZdaYY5LM/edit?usp=sharing" target="_blank" rel="noopener">Open Sheet</a>
+          </div>
+        </article>
+
+      </section>
+
+      <h2> ⦿ Lower Stage:</h2>
+      <section class="links" aria-label="Lower Stage forms and sheets">
+
+        <article class="card lower-stage">
+          <div>
+            <h3>Printing Order (Form)</h3>
+            <p>Submit printing requests using this form.</p>
+          </div>
+          <div class="actions">
+            <a class="btn lower-stage-primary" href="https://forms.gle/Kaax6TYScfUKrRc66" target="_blank" rel="noopener">Open Form</a>
+            <a class="btn lower-stage-outline small" href="https://docs.google.com/spreadsheets/d/1AegljJVOMXk-ss8VT6j5xGeQCQ9sDSJ-abFznAzj_Lk/edit?usp=sharing" target="_blank" rel="noopener">HOD Sheet</a>
+          </div>
+        </article>
+
+        <article class="card lower-stage">
+          <div>
+            <h3>Permissions (Form)</h3>
+            <p>Collect parent permissions digitally.</p>
+          </div>
+          <div class="actions">
+            <a class="btn lower-stage-primary" href="https://forms.gle/maZigqj8JtQayXwu9" target="_blank" rel="noopener">Open Form</a>
+            <a class="btn lower-stage-outline small" href="https://docs.google.com/spreadsheets/d/1MbxZzprW4ZnizUyZK06RFmno_d9krTaqhyRIx_BQPfw/edit?usp=sharing" target="_blank" rel="noopener">HOD Sheet</a>
+          </div>
+        </article>
+
+        <article class="card lower-stage">
+          <span class="badge">All Teachers</span>
+          <div>
+            <h3>Behaviour Tracker</h3>
+            <p>Live Google Sheet for all teachers to track behaviour incidents and rewards.</p>
+          </div>
+          <div class="actions">
+            <a class="btn lower-stage-primary" href="https://docs.google.com/spreadsheets/d/1wxfS6pv1A3aOihKZa5BnzqD-7HCfiBuT18DL5jxSR1k/edit?usp=sharing" target="_blank" rel="noopener">Open Sheet</a>
           </div>
         </article>
 
